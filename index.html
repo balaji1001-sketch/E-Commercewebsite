@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopSphere — Setup Check</title>
+
+  <!--
+    Phase 1 only.
+    This page exists to PROVE that our folder structure, CSS and JS are wired
+    correctly before we write a single line of real UI.
+    In Phase 4 this file becomes the real homepage.
+  -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <main class="setup">
+    <h1>ShopSphere</h1>
+    <p class="setup__sub">E-Commerce &amp; Order Management System — Phase 1 setup check</p>
+
+    <ul class="setup__list">
+      <li id="check-html"><span class="dot"></span> HTML loaded</li>
+      <li id="check-css"><span class="dot"></span> CSS loaded (assets/css/base.css)</li>
+      <li id="check-js"><span class="dot"></span> JS loaded (assets/js/main.js)</li>
+      <li id="check-modules"><span class="dot"></span> ES modules working (api/config.js imported)</li>
+    </ul>
+
+    <pre id="config-dump" class="setup__code">reading config…</pre>
+  </main>
+
+  <!--
+    type="module" lets one JS file import another.
+    This is why we can split our code into api/ services/ ui/ instead of one giant file.
+  -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
